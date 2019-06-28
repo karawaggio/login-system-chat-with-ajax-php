@@ -15,3 +15,274 @@ body {
 img {
   max-width: 100%;
 }
+.login-form-wrapper,
+.create-acc-wrapper,
+.reset-pass-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/bg-img1.jpg') center no-repeat;
+  background-size: cover;
+  filter: opacity(85%);
+  padding: 0 20px;
+}
+.chat-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 10px 20px;
+}
+.chat-wrapper h1 {
+  margin: 70px 0 20px;
+  text-align: center;
+}
+#chat-container {
+  width: 50%;
+  margin: 10px auto 150px;
+  background-color: #bbb;
+  border: 1px solid #bbb;
+  border-bottom-width: 1px;
+  border-radius: 5px;
+}
+#chat-container input,
+#chat-container textarea {
+  background-color: #ddd;
+  border: 1px solid #bbb;
+}
+#chat-container input::placeholder,
+#chat-container textarea::placeholder {
+  color: #777;
+}
+#chat-container #submit-btn {
+  border-bottom-width: 1px;
+}
+#chat-container #show-messages {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-bottom-width: 1px;
+  border-radius: 5px;
+  background: url('../images/bg-img1.jpg') center no-repeat;
+  background-size: cover;
+}
+#chat-container #msg {
+  min-height: 100px;
+}
+@media screen and (max-width: 820px) {
+  #show-messages {
+    min-height: 350px;
+  }
+}
+@media screen and (min-width: 821px) {
+  #show-messages {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #chat-container {
+    width: 80%;
+  }
+}
+footer {
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  background-color: #555;
+  text-align: center;
+}
+.form-container {
+  position: relative;
+  padding: 100px;
+}
+.login-wrapper,
+.signup-wrapper,
+.reset-wrapper {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.login-title,
+.signup-title,
+.reset-title {
+  font-size: 28px;
+  color: #333;
+  padding-bottom: 20px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.login-block,
+.signup-block,
+.reset-block {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+.login-wrapper input,
+.signup-wrapper input,
+.reset-wrapper input,
+.chat-wrapper input,
+.login-wrapper textarea,
+.signup-wrapper textarea,
+.reset-wrapper textarea,
+.chat-wrapper textarea {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  padding: 15px 20px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.login-wrapper input:not(:last-child),
+.signup-wrapper input:not(:last-child),
+.reset-wrapper input:not(:last-child) {
+  margin-bottom: 20px;
+}
+.login-wrapper input[type="email"]:focus,
+.signup-wrapper input[type="email"]:focus,
+.reset-wrapper input[type="email"]:focus,
+.login-wrapper input[type="email"]:active,
+.signup-wrapper input[type="email"]:active,
+.reset-wrapper input[type="email"]:active,
+.login-wrapper input[type="password"]:focus,
+.signup-wrapper input[type="password"]:focus,
+.reset-wrapper input[type="password"]:focus,
+.login-wrapper input[type="password"]:active,
+.signup-wrapper input[type="password"]:active,
+.reset-wrapper input[type="password"]:active {
+  border-color: #777;
+}
+.login-wrapper input[type="submit"],
+.signup-wrapper input[type="submit"],
+.reset-wrapper input[type="submit"],
+.chat-wrapper input[type="submit"] {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  background-color: rgba(92, 92, 92, 0.5);
+  border: 1px solid #777;
+  border-bottom-width: 3px;
+  color: #222;
+  outline: none;
+  cursor: pointer;
+}
+.login-wrapper input[type="submit"]:hover,
+.signup-wrapper input[type="submit"]:hover,
+.reset-wrapper input[type="submit"]:hover,
+.chat-wrapper input[type="submit"]:hover,
+.login-wrapper input[type="submit"]:focus,
+.signup-wrapper input[type="submit"]:focus,
+.reset-wrapper input[type="submit"]:focus,
+.chat-wrapper input[type="submit"]:focus {
+  background-color: rgba(150, 150, 150, 0.4);
+}
+.checkbox-wrap {
+  margin-bottom: 20px;
+}
+.checkbox-wrap label {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  padding: 0 20px;
+  line-height: 50px;
+  height: 50px;
+  padding: 0 10px;
+}
+.checkbox-wrap #rememberme {
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+}
+.login-check-block {
+  margin-top: 30px;
+}
+.login-check {
+  line-height: 25px;
+  height: 25px;
+}
+.signup-check,
+.reset-check {
+  line-height: 40px;
+  height: 40px;
+}
+.login-check,
+.signup-check,
+.reset-check {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+.login-check a,
+.signup-check a,
+.reset-check a {
+  color: #333;
+}
+.login-check a:hover,
+.signup-check a:hover,
+.reset-check a:hover,
+.login-check a:focus,
+.signup-check a:focus,
+.reset-check a:focus {
+  color: #222;
+  font-weight: bold;
+  transition: background-color 2s ease-out;
+}
+@media screen and (min-width: 318px) and (max-width: 510px) {
+  .login-form-wrapper {
+    padding: 0;
+  }
+  .form-container {
+    padding: 17px;
+  }
+}
+@media screen and (min-width: 511px) and (max-width: 620px) {
+  .form-container {
+    padding: 50px;
+  }
+}
+.error {
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #f8d7da;
+  color: #721c24;
+  font-size: 18px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+.userpanel {
+  width: 100%;
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  color: #040505;
+  background-color: #ddd;
+  border-bottom: 2px solid #aaa;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.userpanel a {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  text-decoration: none;
+  border: 0;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.userpanel a:hover {
+  background-color: #777;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
