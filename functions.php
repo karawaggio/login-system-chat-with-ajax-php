@@ -10,7 +10,7 @@
         /* add your password */
         $pwd = 'root';
         /* add your database name */
-        $dbname = 'ajax_php_mysql_chat';
+        $dbname = 'chat';
     
         $conn = new mysqli($server, $user, $pwd, $dbname);
         confirm_db_connect($conn);
