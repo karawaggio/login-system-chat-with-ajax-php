@@ -1,4 +1,4 @@
-## login-system-chat-with-ajax-php
+## Login system and chat with AJAX, PHP and MySQL
 
 A small chat project. Stack includes:
 
